@@ -1,0 +1,86 @@
+ *{
+  margin: 0;
+ }
+ 
+ body{
+  background-color: black;
+  
+  font-family: "bebas-nue", Arial, Helvetica, sans-serif;
+ }
+ 
+ 
+ .header {
+    background-image: url("/images/bodybackground.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 400px;
+  } 
+/* img{
+  height: 100%;
+  width: 100%;
+} */
+.navigation{
+  overflow: hidden;
+  background-color: rgba(3,3,3,0.7);
+  position: fixed; 
+  top: 0; 
+  width: 100%;
+  z-index: 1;
+}
+  ul {
+    list-style-type: none;
+    margin: 0px;
+    margin-left: 5%;
+    padding: 20px 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:center;
+    width: 40%;
+    
+  }
+  li{
+    color: white;
+    display: inline;
+    margin-left: 0.5em;
+    font-size: small;
+  }
+  #netflix{
+    font-weight: bolder;
+    color: red;
+    margin-right: 2em;
+    font-size: large;
+  }
+  #home{
+    font-weight: bolder;
+  }
+  .bagroundimg{
+    width: 100%;
+    position: absolute;
+    left:0;
+    top:0;
+    background-size: cover;
+    z-index: 0;
+  }
+  .rowfilms{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    /* padding: 20px; */
+
+  }
+
+  .rowimgfilms{
+  width: 100%;
+  object-fit: contain;
+  max-height: 100px;
+  margin-right: 10px;
+  transition: transform 450ms;
+  }
+  .rowimgfilms:hover {
+    transform: scale(1.08);
+  }
+  .rowfilms::-webkit-scrollbar {
+    display: none;
+  }
