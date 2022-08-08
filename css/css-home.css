@@ -9,12 +9,15 @@
  }
  
  
- .header {
+ .cover {
     background-image: url("/images/bodybackground.jpg");
+    /* background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent); */
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    
+    /* background-position: center center; */
     background-size: cover;
-    height: 400px;
+    height: 500px;
+    position: relative;
   } 
 /* img{
   height: 100%;
@@ -33,19 +36,19 @@
 }
   ul {
     list-style-type: none;
-    margin-left: 5%;
-    padding: 20px 60px;
+    padding: 20px 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items:center;
-    width: 50%;
-    
+  }
+  ul i {
+    color: white;
   }
   li{
     color: white;
     display: inline;
-    margin-left: 0.5em;
+    margin-left: 1.3em;
     font-size: small;
   }
   #netflix{
@@ -55,8 +58,13 @@
     font-size: large;
   }
   #home{
-    font-weight: bolder;
+    font-weight: 900;
 
+  }
+  #avatar{
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
   }
   .netlogo{
     width: 80px;
@@ -74,11 +82,67 @@
     background-size: cover;
     z-index: 0;
   }
+  .righticons{
+    display: flex;
+    flex-direction: row-reverse;
+    top: 55%;
+  }
+  .whites{
+    height: 10px;
+    width: 5px;
+    color: white;
+  }
+  .greys{
+    
+      height: 10px;
+      width: 25px;
+      color:rgba(3,3,3,0.2);
+    }
+  
+  .coverbutton1{
+  background-color: lightgray; 
+  border: none; 
+  color: black; 
+  padding: 10px 30px; 
+  border-radius: 5px;
+  font-size: 15px; 
+  cursor: pointer;
+  }
+  .coverbutton1 i{
+    margin-right: 10px;
+  }
+  .coverbutton2 i{
+    margin-right: 10px;
+  }
+
+  .coverbutton2{
+    background-color: rgba(204, 201, 201, 0.3); 
+  border: none; 
+  color: white; 
+  padding: 10px 30px; 
+  border-radius: 5px;
+  font-size: 15px; 
+  cursor: pointer;
+  }
+  .coverbuttons{
+    margin-left: 3%;
+    position: relative;
+    top: 55%;
+    color:white;
+  }
+  .coverbuttons p{
+    width: 40%;
+  }
+  .coverdeck{
+    margin-left: 40%;
+    position: relative;
+    top: 58%;
+    color: white;
+  }
   .rowfilms{
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    
     padding-bottom: 30px;
 
   }

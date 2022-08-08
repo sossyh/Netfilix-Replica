@@ -1,0 +1,161 @@
+body{
+    background-color: rgba(0,0,0, 0.9);
+}
+.bigposter{
+    width: 60%;
+    margin: 0px 20%;
+    background-color: rgba(43, 40, 40, 0.85);
+    /* background-color: aliceblue; */
+}
+.toppart{
+    background-image: url("/images/bodybackground.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    /* position: relative; */
+}
+.toppart i{
+    color: white;
+    position: relative;
+    top: 10px;
+    left: 97%;
+}
+.toppart button i{
+    color: black;
+    position: relative;
+    top: 10px;
+    left: 97%;
+}
+.toppartpara{
+    /* display: inline-block; */
+    width: 40%;
+    color: white;
+    margin-top: 25% ;
+    margin-left: 55%; 
+}
+
+.coverbuttons{
+    margin-left: 5%;
+    position: relative;
+    top: 55%;
+    color:white;
+    margin-bottom: 5%;
+  }
+  .coverbuttons p{
+    width: 40%;
+  }
+
+.coverbutton1{
+    background-color: lightgray; 
+    border: none; 
+    color: black; 
+    padding: 10px 30px; 
+    border-radius: 5px;
+    font-size: 15px; 
+    cursor: pointer;
+    }
+    .coverbutton1 i{
+      margin-right: 10px;
+    }
+    .episoidh1{
+        color: white;
+    }
+    .coverbutton2{
+        background-color:  rgba(0,0,0, 0.7); 
+        border-color:white ; 
+        color: white; 
+        padding: 5px 20px; 
+        border-radius: 5px;
+        font-size: 15px; 
+        cursor: pointer;
+        }
+.coverbutton2 i{
+    margin-left: 10px;
+}
+.seasonepi{
+ margin: 3% 5%;
+ display: flex;
+flex-direction: row;
+justify-content: space-between;
+/* border-bottom: 1px solid rgb(151, 150, 150); */
+}
+.episoidlist{
+margin:3% 5%;
+display: flex;
+flex-direction: row;
+/* justify-content: space-between; */
+gap: 10px;
+
+}
+.episoids{
+    margin:0% 5%;
+    border-bottom: 1px solid rgb(121, 119, 119);
+}
+.lowerparas{
+    display: inline;
+    font-size: smaller;
+    color:azure;
+}
+.rowobj{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.episoidlistimg{
+    height: 80px;
+    width: 110px;
+}
+.epiparas{
+    color: white;
+}
+.episoidlist h3{
+    color: white;
+    font-weight: lighter;
+}
+.boldp{
+    font-weight: bolder;
+}
+.centertext{
+    color: white;
+    margin: 0 5%;
+    margin-top: 5%;
+}
+div h4 i{
+    margin-right: 10px;
+}
+
+.card {
+    width: 200px;
+    height: 300px;
+    background-color: rgba(66, 65, 65, 0.8) ;
+    transition: 0.3s;
+    border-radius: 5px; 
+    margin: 2%;
+    margin-top: 1%;
+  }
+  
+  
+  .cardimg {
+    border-radius: 5px 5px 0 0;
+    width:100%
+  }
+  .carddetails{
+    padding: 1em 8%;
+  }
+  h5{
+    margin:0px;
+  }
+  #greens{
+    color: rgb(6, 197, 6);
+  }
+  #whites{
+    color: white;
+    padding-bottom: 10px;
+  }
+  .cardcontainer{
+    padding:0 5%;
+    display: flex;
+    flex-direction: row;
+    /* gap: 3%; */
+    flex-wrap: wrap;
+  }
