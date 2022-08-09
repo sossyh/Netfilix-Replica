@@ -1,24 +1,36 @@
 body{
     background-color: rgba(0,0,0, 0.9);
 }
+.cover {
+  background-image: url("/images/breakingbad.jpg");
+  /* background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent); */
+  background-repeat: no-repeat;
+  border-radius: 5px;
+  margin-top: 3%;
+  /* background-position: center center; */
+  background-size: cover;
+  height: 300px;
+  position: relative;
+} 
 .bigposter{
-    width: 60%;
-    margin: 0px 20%;
+    width: 56%;
+    margin: 0px 22%;
     background-color: rgba(43, 40, 40, 0.85);
     /* background-color: aliceblue; */
 }
 .toppart{
-    background-image: url("/images/bodybackground.jpg");
+    /* background-image: url("/images/breakingbad.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 300px;
+    height: 300px; */
     /* position: relative; */
 }
-.toppart i{
+#topi{
     color: white;
     position: relative;
-    top: 10px;
+    top: 15px;
     left: 97%;
+    z-index: 1;
 }
 .toppart button i{
     color: black;
@@ -28,18 +40,27 @@ body{
 }
 .toppartpara{
     /* display: inline-block; */
+    position: relative;
+    top: 60%;
+    left: 50%;
     width: 40%;
     color: white;
-    margin-top: 25% ;
-    margin-left: 55%; 
+    /* z-index: 1; */
+    /* margin-top: 25% ; */
+    /* margin-left: 55%;  */
 }
 
 .coverbuttons{
-    margin-left: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
     position: relative;
-    top: 55%;
+    top: 60%;
     color:white;
-    margin-bottom: 5%;
+    /* padding-bottom: 5%; */
+    /* background-color: black; */
   }
   .coverbuttons p{
     width: 40%;
@@ -61,8 +82,8 @@ body{
         color: white;
     }
     .coverbutton2{
-        background-color:  rgba(0,0,0, 0.7); 
-        border-color:white ; 
+        background-color: rgba(43, 40, 40, 0.85); 
+        border:1px solid grey ; 
         color: white; 
         padding: 5px 20px; 
         border-radius: 5px;
@@ -73,14 +94,15 @@ body{
     margin-left: 10px;
 }
 .seasonepi{
- margin: 3% 5%;
+margin: 0 5%;
+ padding: 3% 0;
  display: flex;
 flex-direction: row;
 justify-content: space-between;
-/* border-bottom: 1px solid rgb(151, 150, 150); */
+border-bottom: 1px solid rgb(71, 70, 70);
 }
 .episoidlist{
-margin:3% 5%;
+padding: 3% 5%;
 display: flex;
 flex-direction: row;
 /* justify-content: space-between; */
@@ -89,8 +111,20 @@ gap: 10px;
 }
 .episoids{
     margin:0% 5%;
-    border-bottom: 1px solid rgb(121, 119, 119);
+    border-bottom: 1px solid rgb(71, 70, 70);
 }
+
+.episoids:hover{
+    background-color:rgba(88, 87, 87, 0.8) ;
+    margin:0% 5%;
+    border-bottom: 1px solid rgb(71, 70, 70);
+}
+.lowerpara{
+  
+  font-size: smaller;
+  color:azure;
+}
+
 .lowerparas{
     display: inline;
     font-size: smaller;
@@ -125,8 +159,8 @@ div h4 i{
 }
 
 .card {
-    width: 200px;
-    height: 300px;
+    width: 195px;
+    height: 310px;
     background-color: rgba(66, 65, 65, 0.8) ;
     transition: 0.3s;
     border-radius: 5px; 
@@ -159,3 +193,63 @@ div h4 i{
     /* gap: 3%; */
     flex-wrap: wrap;
   }
+  .imgtops{
+    color: white;
+
+  }
+  .carddetails i{
+    color: white;
+    
+  }
+  .carddetails1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  /* .coverbuttons i{
+    height: 40px;
+    width: 40px;
+  } */
+.circles{
+  display: inline;
+  background-color: rgba(43, 40, 40, 0.85);
+  border-radius: 50%;
+  border: 1px solid grey;
+  padding: 10px;
+  color:white;
+}
+.bighorizontal{
+  margin:5% 5%;
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
+  gap: 3%;
+  color: white;
+}
+.lefthori{
+  flex: 2;
+}
+.righthori{
+  flex: 1;
+}
+.blured{
+  color: rgb(143, 142, 142);
+}
+.boxes{
+  display: inline;
+  background-color: rgba(43, 40, 40, 0.85);
+
+  border: 1px solid grey;
+  padding:0 5px;
+  color:white;
+}
+.lowerpar{
+  margin-top: 8%;
+  font-weight: lighter;
+  font-size: smaller;
+}
+.hd{
+  font-weight: lighter;
+  font-size: smaller;
+}

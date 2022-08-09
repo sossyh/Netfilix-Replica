@@ -136,7 +136,7 @@
   .coverdeck{
     margin-left: 40%;
     position: relative;
-    top: 58%;
+    top: 55%;
     color: white;
   }
   .rowfilms{
@@ -165,4 +165,39 @@
     color: white;
     margin-left: 3%;
 
+  }
+  .circles{
+    display: inline;
+    background-color: rgba(43, 40, 40, 0.85);
+    border-radius: 50%;
+    border: 1px solid grey;
+    padding: 10px;
+    color:white;
+  }
+  .playvol{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .boxes{
+    display: inline-block;
+    background-color: rgba(43, 40, 40, 0.85); 
+    /* border: 1px solid grey; */
+    background-color: rgba(104, 103, 103, 0.4);
+    padding:10px 5px;
+    padding-right: 35px;
+    color:white;
+  }
+  .rightmar{
+    display: inline;
+    margin-left:10px ;
+    
+  }
+  .whites{
+    display: inline;
+    border: 1px solid white;
+    padding:10px 0px;
+    height:40px;
+    width: 7px;
+    background-color: white;
   }
