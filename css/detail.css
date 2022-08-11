@@ -9,7 +9,7 @@ body{
   margin-top: 3%;
   /* background-position: center center; */
   background-size: cover;
-  height: 300px;
+  height: 340px;
   position: relative;
 } 
 .bigposter{
@@ -41,7 +41,7 @@ body{
 .toppartpara{
     /* display: inline-block; */
     position: relative;
-    top: 60%;
+    top: 65%;
     left: 50%;
     width: 40%;
     color: white;
@@ -57,7 +57,7 @@ body{
     padding-left: 5%;
     padding-right: 5%;
     position: relative;
-    top: 60%;
+    top: 62%;
     color:white;
     /* padding-bottom: 5%; */
     /* background-color: black; */
@@ -95,7 +95,7 @@ body{
 }
 .seasonepi{
 margin: 0 5%;
- padding: 3% 0;
+ padding: 1% 0;
  display: flex;
 flex-direction: row;
 justify-content: space-between;
@@ -220,7 +220,7 @@ div h4 i{
   color:white;
 }
 .bighorizontal{
-  margin:5% 5%;
+  margin:3% 5%;
   display: flex;
   flex-direction: row;
   /* justify-content: space-between; */
@@ -252,4 +252,5 @@ div h4 i{
 .hd{
   font-weight: lighter;
   font-size: smaller;
+  font-weight: lighter;
 }
