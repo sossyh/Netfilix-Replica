@@ -111,11 +111,11 @@
   .coverbutton1 i{
     margin-right: 10px;
   }
-  .coverbutton2 i{
+  .coverbutton22 i{
     margin-right: 10px;
   }
 
-  .coverbutton2{
+  .coverbutton22{
     background-color: rgba(204, 201, 201, 0.3); 
   border: none; 
   color: white; 
@@ -179,7 +179,7 @@
     flex-direction: row;
     justify-content: space-between;
   }
-  .boxes{
+  .boxesindex{
     display: inline-block;
     background-color: rgba(43, 40, 40, 0.85); 
     /* border: 1px solid grey; */
@@ -201,3 +201,13 @@
     width: 7px;
     background-color: white;
   }
+
+    
+.detail{
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.index{
+
+}

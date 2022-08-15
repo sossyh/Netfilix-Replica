@@ -1,12 +1,12 @@
 body{
     background-color: rgba(0,0,0, 0.9);
 }
-.cover {
+.coverdetail {
   background-image: url("/images/breakingbad.jpg");
-  /* background-image: linear-gradient(180deg,rgba(0,0,0,.7) 10%,transparent); */
+  /* background-image: linear-gradient(180deg,rgba(0,0,0,0.) 10%,transparent); */
   background-repeat: no-repeat;
   border-radius: 5px;
-  margin-top: 3%;
+  margin-top: 6%;
   /* background-position: center center; */
   background-size: cover;
   height: 340px;
@@ -15,7 +15,7 @@ body{
 .bigposter{
     width: 56%;
     margin: 0px 22%;
-    background-color: rgba(43, 40, 40, 0.85);
+    background-color: rgba(43, 40, 40, 0.95);
     /* background-color: aliceblue; */
 }
 .toppart{
@@ -28,10 +28,19 @@ body{
 #topi{
     color: white;
     position: relative;
-    top: 15px;
+    top: 10px;
     left: 97%;
     z-index: 1;
 }
+
+#topi:hover, #top:focus{
+  color: black;
+  position: relative;
+  top: 15px;
+  left: 97%;
+  z-index: 1;
+}
+
 .toppart button i{
     color: black;
     position: relative;
@@ -50,7 +59,7 @@ body{
     /* margin-left: 55%;  */
 }
 
-.coverbuttons{
+.coverbuttonsdetail{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -153,6 +162,7 @@ gap: 10px;
     color: white;
     margin: 0 5%;
     margin-top: 5%;
+    /* padding-bottom: 3%; */
 }
 div h4 i{
     margin-right: 10px;
@@ -212,6 +222,9 @@ div h4 i{
     width: 40px;
   } */
 .circles{
+  text-align: center;
+  /* width: 10px;
+  height: 10px; */
   display: inline;
   background-color: rgba(43, 40, 40, 0.85);
   border-radius: 50%;
