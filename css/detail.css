@@ -134,6 +134,12 @@ gap: 10px;
   color:azure;
 }
 
+.lowerparas1{
+  display: inline;
+  font-size: smaller;
+  color:azure;
+}
+
 .lowerparas{
     display: inline;
     font-size: smaller;

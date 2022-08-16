@@ -31,6 +31,7 @@ const coverdetailtitle = document.getElementsByClassName("toppartpara")[0];
 const recimgs = document.getElementsByClassName("cardimgrec");
 const similarimgs = document.getElementsByClassName("cardimg");
 const coverdetailpara = document.getElementById("lowerparas");
+const recparas = document.getElementsByClassName("lowerparas1");
 let movieid;
 let loading=false;
 
@@ -83,7 +84,8 @@ function getmovierecommendations(movieid){
       let recommondationsarray = jsondata.results;
       for (let i = 0; i < recimgs.length; i++) {
         recimgs[i].src="https://image.tmdb.org/t/p/w500" + recommondationsarray[i].backdrop_path;
-
+        // recparas[i].innerHTML=recommondationsarray[i].overview;
+        console.log(recparas[i]);
       }
    console.log(recommondationsarray);
      });
