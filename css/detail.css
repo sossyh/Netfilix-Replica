@@ -134,6 +134,12 @@ gap: 10px;
   color:azure;
 }
 
+.lowerparas1{
+  display: inline;
+  font-size: smaller;
+  color:azure;
+}
+
 .lowerparas{
     display: inline;
     font-size: smaller;
@@ -177,7 +183,10 @@ div h4 i{
     margin: 2%;
     margin-top: 1%;
   }
-  
+  .cardimgrec {
+    border-radius: 5px 5px 0 0;
+    width:100%
+  }
   
   .cardimg {
     border-radius: 5px 5px 0 0;

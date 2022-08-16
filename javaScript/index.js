@@ -28,7 +28,10 @@ const detail=document.getElementsByClassName("detail")[0];
 const topi=document.getElementById("topi");
 const coverdetail = document.getElementsByClassName("coverdetail")[0];
 const coverdetailtitle = document.getElementsByClassName("toppartpara")[0];
+const recimgs = document.getElementsByClassName("cardimgrec");
+const similarimgs = document.getElementsByClassName("cardimg");
 const coverdetailpara = document.getElementById("lowerparas");
+const recparas = document.getElementsByClassName("lowerparas1");
 let movieid;
 let loading=false;
 
@@ -54,12 +57,15 @@ function displayimgs(jsondata, rowid) {
       "https://image.tmdb.org/t/p/w500" + imgsarray[i].backdrop_path;
     rowfilms[rowid].appendChild(movieimg);
     movieimg.addEventListener("click",function (){
-      // movieid=imgsarray[i].id;
-      console.log(movieid,i);
+      // 
+      
       detail.style.display = 'block';
       let url=common+`movie/${imgsarray[i].id}`+APIkey;
-
+      let movieid=imgsarray[i].id;
+      console.log(movieid,i);
       displaymodal(url);
+      getmovierecommendations(movieid);
+      getsimilarmovie(movieid);
       index.style.overflow= 'hidden';
       index.style.position= 'fixed';
      
@@ -70,14 +76,45 @@ function displayimgs(jsondata, rowid) {
   }
 }
 
+function getmovierecommendations(movieid){
+  let recommendationurl=common+`movie/${movieid}/recommendations`+APIkey+`&language=en-US&page=1`;
+  fetch(recommendationurl).then(data=>{
+    data.json().then(
+     (jsondata)=>{
+      let recommondationsarray = jsondata.results;
+      for (let i = 0; i < recimgs.length; i++) {
+        recimgs[i].src="https://image.tmdb.org/t/p/w500" + recommondationsarray[i].backdrop_path;
+        // recparas[i].innerHTML=recommondationsarray[i].overview;
+        console.log(recparas[i]);
+      }
+   console.log(recommondationsarray);
+     });
+}
+  )}
+
+
+function getsimilarmovie(movieid){
+  let similarmovieurl=common+`movie/${movieid}/similar`+APIkey+`&language=en-US&page=1`;
+
+  fetch(similarmovieurl).then(data=>{
+    data.json().then(
+     (jsondata)=>{
+       let similarsarray = jsondata.results;
+      for (let i = 0; i < similarimgs.length; i++) {
+        similarimgs[i].src="https://image.tmdb.org/t/p/w500" + similarsarray[i].backdrop_path;
+
+      }
+   console.log(similarsarray);
+     });
+}
+  )}
+
 
 function displaymodal(url){
   fetch(url).then(data=>{
     data.json().then(
      (jsonobject)=>{
-       console.log(jsonobject);
-      //  let coverobject=jsondata.results;
-      //   let coverposter=coverobject[i];
+      
            let imgurl="https://image.tmdb.org/t/p/w500"+jsonobject.backdrop_path;
            coverdetailpara.innerHTML=jsonobject.overview;
            coverdetailtitle.innerHTML=jsonobject.tagline;
@@ -85,24 +122,9 @@ function displaymodal(url){
      }
     );
 
-
-//   fetch(coverurl.url).then(data=>{
-//     return data.json();
-// }).then((jsondata)=>{
-//     let coverobject=jsondata.results;
-//     let coverposter=coverobject[13];
-//     let imgurl="https://image.tmdb.org/t/p/w500"+coverposter.backdrop_path;
-//     coverdetailpara.innerHTML=coverposter.overview;
-//     // coverdetailtitle.innerHTML=coverposter.title;
-//     coverdetail.style.backgroundImage="url(" +imgurl+")";
 })
   
 }
-rowimgfilms.forEach(rowimg =>{
-  rowimg.addEventListener("click",()=>{
-    console.log("hi");
-  })
-});
 
 
 
